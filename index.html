@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omini food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./omni.css">
+</head>
+<style>
+  @import url('ght@400&display=swhttps://fonts.googleapis.com/css2?family=Rubik:wap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    word-spacing: 2px;
+
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .omnifood {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        background-color: rgba(226, 224, 224, 0.115);
+
+        .header {
+
+            background-color: rgb(255, 246, 235);
+            display: flex;
+            flex-direction: column;
+            /* height: 100vh; */
+            justify-content: center;
+            align-items: center;
+
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 30px 45px;
+                width: 100%;
+                position: relative;
+
+
+                .homeimg {
+                    width: 160px;
+                    height: 23px;
+                    cursor: pointer;
+                }
+
+                .navside {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: calc(50% - 30px);
+
+
+                    .n1 {
+                        font-size: 17px;
+                        font-weight: bold;
+                        color: rgb(66, 66, 66);
+                        cursor: pointer;
+                    }
+
+                    .n2 {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: white;
+                        text-align: center;
+                        width: calc(20%);
+                        padding: 6px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        background-color: rgb(255, 132, 0);
+                        border-radius: 6px;
+                    }
+
+                    .n2:hover {
+                        color: rgb(55, 55, 55);
+                    }
+
+                    .n1:hover {
+                        color: rgb(255, 132, 0);
+                    }
+
+                }
+            }
+
+            .navbar.sticky {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(255, 255, 255, 0.953);
+                z-index: 1000;
+            }
+
+            .headerdis {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin: 60px 90px 100px 90px;
+
+                .b1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    width: calc(90%);
+                    gap: 40px;
+
+                    .head {
+                        font-size: 65px;
+                        font-weight: bolder;
+                        color: rgba(13, 13, 13, 0.819);
+                        line-height: 60px;
+                        font-weight: bolder;
+
+                    }
+
+                    .disc {
+
+                        width: calc(65%);
+                    }
+
+                    .clickb {
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+
+                        .sew {
+                            margin: 20px;
+                            width: 200px;
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: white;
+                            text-align: center;
+                            padding: 6px 16px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            background-color: rgb(255, 132, 0);
+                            border-radius: 6px;
+
+                        }
+
+                        .sew:hover {
+                            background-color: rgb(71, 107, 238);
+
+                        }
+
+                        .lm {
+                            width: 200px;
+                            font-size: 18px;
+                            text-align: center;
+                            padding: 6px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            background-color: rgb(255, 255, 255);
+                            border-radius: 6px;
+                            margin: 20px;
+                        }
+
+                        .lm:hover {
+                            color: rgb(255, 255, 255);
+                            background-color: rgb(54, 79, 243);
+
+                        }
+
+                    }
+
+                    .btm {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        width: 100%;
+
+                        .slg {
+                            display: flex;
+                            width: 100%;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: start;
+                            position: relative;
+                            gap: 10px;
+
+                            img {
+                                border-radius: 50%;
+                                height: 50px;
+
+
+
+                            }
+
+                            .cir1 {
+                                position: relative;
+                                z-index: 1;
+                            }
+
+                            .cir2 {
+                                z-index: 2;
+                                position: absolute;
+                                left: 30px;
+                                border: 3px solid white;
+                            }
+
+                            .cir3 {
+                                z-index: 3;
+                                position: absolute;
+                                left: 60px;
+                                border: 3px solid white;
+                            }
+
+                            .cir4 {
+                                z-index: 4;
+                                position: absolute;
+                                left: 90px;
+                                border: 3px solid white;
+                            }
+
+                            .cir5 {
+                                z-index: 5;
+                                position: absolute;
+                                left: 120px;
+                                border: 3px solid white;
+                            }
+
+                            .cir6 {
+                                z-index: 6;
+                                position: absolute;
+                                left: 150px;
+                                border: 3px solid white;
+                            }
+
+                            .med {
+                                position: absolute;
+                                z-index: 7;
+                                left: 230px;
+                                font-size: 18px;
+                                font-weight: bold;
+
+                            }
+
+
+                            .med::before {
+                                content: "250,000+  ";
+                                color: orange;
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+
+
+                        }
+                    }
+
+                }
+
+                .img3 {
+                    height: 560px;
+                    width: 800px;
+                }
+            }
+
+        }
+
+        .asfeature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+
+            .asf {
+                font-size: 15px;
+                color: gray;
+                font-weight: 700;
+            }
+
+            .img5 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+                img {
+
+                    height: 35px;
+                    filter: grayscale(100%) opacity(70%)
+                }
+            }
+        }
+
+        .howit,
+        .meals {
+            width: calc(70%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 50px;
+
+            .work,
+            .mealshead {
+                color: orange;
+                font-size: 25px;
+            }
+
+            .wdis,
+            .mealsdis {
+                font-size: 45px;
+                font-weight: bold;
+            }
+        }
+
+        .mainsimple {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .simple1,
+            .simple14 {
+                width: calc(70%);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+
+                .box,
+                .box2 {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 10px;
+
+
+                    .s1 {
+                        font-size: 70px;
+                        color: rgba(128, 128, 128, 0.874);
+                    }
+
+                    .shead {
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+
+                    .sdis {
+                        width: calc(70% - 15px);
+
+                    }
+                }
+
+                .sim1 {
+                    height: 400px;
+                    position: relative;
+                    z-index: 20;
+
+                }
+
+                .sim11 {
+
+                    position: absolute;
+                    z-index: 19;
+                    right: 130px;
+
+                    border-radius: 70%;
+                    height: 300px;
+                    width: 380px;
+                    background: radial-gradient(rgb(245, 213, 179)50%, rgb(255, 246, 235) 20%);
+                }
+
+                .sim2 {
+                    height: 400px;
+                    position: relative;
+                    z-index: 20;
+
+                }
+
+                .sim12 {
+
+                    position: absolute;
+                    z-index: 19;
+                    left: 130px;
+
+
+                    border-radius: 70%;
+                    height: 300px;
+                    width: 380px;
+                    background: radial-gradient(rgb(245, 213, 179)50%, rgb(255, 246, 235) 20%);
+
+                }
+
+                .sim3 {
+                    height: 400px;
+                    position: relative;
+                    z-index: 20;
+
+                }
+
+                .sim13 {
+
+                    position: absolute;
+                    z-index: 19;
+                    left: 26.5cm;
+
+                    border-radius: 70%;
+                    height: 300px;
+                    width: 380px;
+                    background: radial-gradient(rgb(245, 213, 179)50%, rgb(255, 246, 235) 20%);
+
+                }
+
+                .box2 {
+
+                    margin-left: 6cm;
+                }
+
+            }
+
+        }
+
+        .meals {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .maincards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+
+            .cardss {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: gray;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    transition: transform 0.3s;
+
+
+
+                    .vv {
+                        height: 300px;
+                        width: 350px;
+                    }
+
+                    .carddtls {
+                        display: flex;
+                        justify-content: center;
+                        background-color: white;
+                        padding: 30px;
+
+                        .cardh {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: start;
+                            gap: 10px;
+
+
+                        }
+                    }
+
+                }
+
+                .card:hover {
+                    transform: translateY(-13px);
+                    cursor: pointer;
+                    box-shadow: 10px 6px 10px;
+
+                }
+            }
+
+            .diets {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                gap: 25px;
+
+                .cla {
+                    font-size: 33px;
+                    font-weight: bold;
+                    padding: 0px 0px 30px;
+                }
+
+                .diet {
+
+                    color: rgb(99, 98, 98);
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+
+            .seeall {
+                color: orange;
+
+                text-decoration: underline;
+                text-underline-offset: 10px;
+                text-decoration-color: rgba(247, 184, 69, 0.533);
+                cursor: pointer;
+            }
+        }
+
+        .maingrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: start;
+            gap: 100px;
+            background-color: rgb(255, 246, 235);
+            padding: 10px;
+
+            .gbox1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 100px;
+                padding: 40PX;
+                margin-left: 10PX;
+
+                .ghead {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+
+                    .gh1 {
+                        color: rgb(251, 170, 19);
+                    }
+
+                    .gh2 {
+                        font-size: 45px;
+                        font-weight: bold;
+                        color: rgb(36, 35, 35);
+                    }
+                }
+
+                .b1grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 60px;
+
+                    .gcard {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        color: gray;
+
+                        img {
+                            border-radius: 50%;
+                            height: 70PX;
+                            width: 70pX;
+                        }
+
+                    }
+                }
+            }
+
+            .gbox2 {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 10px 32px;
+                gap: 17px;
+
+                img {
+                    border-radius: 10px;
+                    height: 200px;
+                    transition: 0.3s ease;
+                }
+
+                :is(.grdidimg1, .grdidimg2, .grdidimg3, .grdidimg4, .grdidimg5, .grdidimg6, .grdidimg7, .grdidimg8, .grdidimg9, .grdidimg10, .grdidimg11, .grdidimg12):hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+
+
+
+            }
+
+        }
+
+        .pricing {
+            width: calc(80%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+
+            .pricingg {
+                color: rgb(255, 166, 0);
+            }
+
+            .priceslg {
+                font-size: 50px;
+                font-weight: bold;
+                color: rgb(27, 27, 27);
+            }
+
+        }
+
+        .mprscds {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            .prccards {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+
+                .prscard1,
+                .prscard2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 23px;
+                    border: 1px solid rgba(255, 166, 0, 0.515);
+                    color: gray;
+                    border-radius: 15px;
+                    padding: 35px;
+
+                    .pcardh {
+                        width: calc(100%);
+                        color: orange;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .prc {
+                        width: calc(100%);
+                        text-align: center;
+                        font-size: 25px;
+                        font-weight: 600;
+                        color: rgb(20, 20, 20);
+
+                        sub {
+                            color: rgb(20, 20, 20);
+                            font-weight: 600;
+                        }
+
+                    }
+
+                    .sew1 {
+                        margin: 20px;
+                        width: 200px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: white;
+                        text-align: center;
+                        padding: 6px 16px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        background-color: rgb(255, 132, 0);
+                        border-radius: 6px;
+
+                    }
+
+                    .sew1:hover {
+
+                        background-color: rgb(68, 106, 241);
+
+                    }
+
+
+                }
+
+                .prscard2 {
+                    background-color: rgb(255, 246, 235);
+                    color: rgb(107, 106, 106);
+                }
+
+                .prcof::before {
+                    content: "✓  ";
+                    color: orange;
+                    font-size: 30px;
+                }
+
+                .prcof1::before {
+                    content: "✕ ";
+                    color: orange;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .logs4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 40px;
+            padding: 30PX 120PX;
+
+            .lg1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 30px;
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+
+                .lgh {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .gradimg {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: calc(80%);
+            border-radius: 30px;
+            overflow: hidden;
+
+            .clr {
+                background:
+                    linear-gradient(to bottom, rgba(185, 117, 15, 0.46), rgba(255, 100, 11, 0.236)),
+                    url("https://omnifood.dev/img/eating.jpg");
+                background-size: cover;
+                height: 500px;
+                width: 800px;
+
+            }
+
+            .b1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                height: 500px;
+                gap: 50px;
+                background-color: rgb(216, 128, 33);
+                padding: 70px;
+
+                .bh {
+                    font-size: 43px;
+                    font-weight: bold;
+                    color: rgb(87, 48, 24);
+                }
+
+
+                .frm {
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 30px;
+
+                }
+
+                .frm1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    font-size: 15px;
+                    gap: 10px;
+
+                    input,
+                    select {
+                        font-size: 18px;
+                        height: 50px;
+                        width: 320px;
+                        outline: none;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 5px 10px;
+                    }
+
+                    .sub {
+                        background-color: rgb(69, 26, 26);
+                        font-size: 20px;
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                    .sub:hover {
+                        background-color: white;
+                        color: rgb(49, 48, 48);
+                    }
+                }
+            }
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 30px;
+            padding: 80px 40px;
+
+            .b1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                color: gray;
+                width: calc(90%);
+
+                img {
+                    height: 20px;
+                    width: 140px;
+                }
+
+                #icc {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 20px;
+                }
+
+                .fh {
+                    font-size: 24px;
+                    color: rgb(89, 89, 89);
+                    font-weight: bold;
+                }
+
+            }
+
+        }
+
+    }
+}
+
+
+@media  (min-width:768px) and (max-width:1024px) {
+
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    word-spacing: 2px;
+
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .omnifood {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        background-color: rgba(226, 224, 224, 0.115);
+
+        .header {
+
+            background-color: rgb(255, 246, 235);
+            display: flex;
+            flex-direction: column;
+            /* height: 100vh; */
+            justify-content: center;
+            align-items: center;
+
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 30px 45px;
+                width: 100%;
+                position: relative;
+
+
+                .homeimg {
+                    width: 160px;
+                    height: 23px;
+                    cursor: pointer;
+                }
+
+                .navside {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: calc(50% - 30px);
+
+
+                    .n1 {
+                        font-size: 17px;
+                        font-weight: bold;
+                        color: rgb(66, 66, 66);
+                        cursor: pointer;
+                    }
+
+                    .n2 {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: white;
+                        text-align: center;
+                        width: calc(20%);
+                        padding: 6px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        background-color: rgb(255, 132, 0);
+                        border-radius: 6px;
+                    }
+
+                    .n2:hover {
+                        color: rgb(55, 55, 55);
+                    }
+
+                    .n1:hover {
+                        color: rgb(255, 132, 0);
+                    }
+
+                }
+            }
+
+            .navbar.sticky {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(255, 255, 255, 0.953);
+                z-index: 1000;
+            }
+
+            .headerdis {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin: 60px 90px 100px 90px;
+
+                .b1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    width: calc(90%);
+                    gap: 40px;
+
+                    .head {
+                        font-size: 65px;
+                        font-weight: bolder;
+                        color: rgba(13, 13, 13, 0.819);
+                        line-height: 60px;
+                        font-weight: bolder;
+
+                    }
+
+                    .disc {
+
+                        width: calc(65%);
+                    }
+
+                    .clickb {
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+
+                        .sew {
+                            margin: 20px;
+                            width: 200px;
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: white;
+                            text-align: center;
+                            padding: 6px 16px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            background-color: rgb(255, 132, 0);
+                            border-radius: 6px;
+
+                        }
+
+                        .sew:hover {
+                            background-color: rgb(71, 107, 238);
+
+                        }
+
+                        .lm {
+                            width: 200px;
+                            font-size: 18px;
+                            text-align: center;
+                            padding: 6px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            background-color: rgb(255, 255, 255);
+                            border-radius: 6px;
+                            margin: 20px;
+                        }
+
+                        .lm:hover {
+                            color: rgb(255, 255, 255);
+                            background-color: rgb(54, 79, 243);
+
+                        }
+
+                    }
+
+                    .btm {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        width: 100%;
+
+                        .slg {
+                            display: flex;
+                            width: 100%;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: start;
+                            position: relative;
+                            gap: 10px;
+
+                            img {
+                                border-radius: 50%;
+                                height: 50px;
+
+
+
+                            }
+
+                            .cir1 {
+                                position: relative;
+                                z-index: 1;
+                            }
+
+                            .cir2 {
+                                z-index: 2;
+                                position: absolute;
+                                left: 30px;
+                                border: 3px solid white;
+                            }
+
+                            .cir3 {
+                                z-index: 3;
+                                position: absolute;
+                                left: 60px;
+                                border: 3px solid white;
+                            }
+
+                            .cir4 {
+                                z-index: 4;
+                                position: absolute;
+                                left: 90px;
+                                border: 3px solid white;
+                            }
+
+                            .cir5 {
+                                z-index: 5;
+                                position: absolute;
+                                left: 120px;
+                                border: 3px solid white;
+                            }
+
+                            .cir6 {
+                                z-index: 6;
+                                position: absolute;
+                                left: 150px;
+                                border: 3px solid white;
+                            }
+
+                            .med {
+                                position: absolute;
+                                z-index: 7;
+                                left: 230px;
+                                font-size: 18px;
+                                font-weight: bold;
+
+                            }
+
+
+                            .med::before {
+                                content: "250,000+  ";
+                                color: orange;
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+
+
+                        }
+                    }
+
+                }
+
+                .img3 {
+                    height: 560px;
+                    width: 800px;
+                }
+            }
+
+        }
+
+        .asfeature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+
+            .asf {
+                font-size: 15px;
+                color: gray;
+                font-weight: 700;
+            }
+
+            .img5 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+                img {
+
+                    height: 35px;
+                    filter: grayscale(100%) opacity(70%)
+                }
+            }
+        }
+
+        .howit,
+        .meals {
+            width: calc(70%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 50px;
+
+            .work,
+            .mealshead {
+                color: orange;
+                font-size: 25px;
+            }
+
+            .wdis,
+            .mealsdis {
+                font-size: 45px;
+                font-weight: bold;
+            }
+        }
+
+        .mainsimple {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .simple1,
+            .simple14 {
+                width: calc(70%);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+
+                .box,
+                .box2 {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 10px;
+
+
+                    .s1 {
+                        font-size: 70px;
+                        color: rgba(128, 128, 128, 0.874);
+                    }
+
+                    .shead {
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+
+                    .sdis {
+                        width: calc(70% - 15px);
+
+                    }
+                }
+
+                .sim1 {
+                    height: 400px;
+                    position: relative;
+                    z-index: 20;
+
+                }
+
+                .sim11 {
+
+                    position: absolute;
+                    z-index: 19;
+                    right: 130px;
+
+                    border-radius: 70%;
+                    height: 300px;
+                    width: 380px;
+                    background: radial-gradient(rgb(245, 213, 179)50%, rgb(255, 246, 235) 20%);
+                }
+
+                .sim2 {
+                    height: 400px;
+                    position: relative;
+                    z-index: 20;
+
+                }
+
+                .sim12 {
+
+                    position: absolute;
+                    z-index: 19;
+                    left: 130px;
+
+
+                    border-radius: 70%;
+                    height: 300px;
+                    width: 380px;
+                    background: radial-gradient(rgb(245, 213, 179)50%, rgb(255, 246, 235) 20%);
+
+                }
+
+                .sim3 {
+                    height: 400px;
+                    position: relative;
+                    z-index: 20;
+
+                }
+
+                .sim13 {
+
+                    position: absolute;
+                    z-index: 19;
+                    left: 26.5cm;
+
+                    border-radius: 70%;
+                    height: 300px;
+                    width: 380px;
+                    background: radial-gradient(rgb(245, 213, 179)50%, rgb(255, 246, 235) 20%);
+
+                }
+
+                .box2 {
+
+                    margin-left: 6cm;
+                }
+
+            }
+
+        }
+
+        .meals {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .maincards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+
+            .cardss {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: gray;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    transition: transform 0.3s;
+
+
+
+                    .vv {
+                        height: 300px;
+                        width: 350px;
+                    }
+
+                    .carddtls {
+                        display: flex;
+                        justify-content: center;
+                        background-color: white;
+                        padding: 30px;
+
+                        .cardh {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: start;
+                            gap: 10px;
+
+
+                        }
+                    }
+
+                }
+
+                .card:hover {
+                    transform: translateY(-13px);
+                    cursor: pointer;
+                    box-shadow: 10px 6px 10px;
+
+                }
+            }
+
+            .diets {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                gap: 25px;
+
+                .cla {
+                    font-size: 33px;
+                    font-weight: bold;
+                    padding: 0px 0px 30px;
+                }
+
+                .diet {
+
+                    color: rgb(99, 98, 98);
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+
+            .seeall {
+                color: orange;
+
+                text-decoration: underline;
+                text-underline-offset: 10px;
+                text-decoration-color: rgba(247, 184, 69, 0.533);
+            }
+        }
+
+        .maingrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: start;
+            gap: 100px;
+            background-color: rgb(255, 246, 235);
+            padding: 10px;
+
+            .gbox1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 100px;
+                padding: 40PX;
+                margin-left: 10PX;
+
+                .ghead {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+
+                    .gh1 {
+                        color: rgb(251, 170, 19);
+                    }
+
+                    .gh2 {
+                        font-size: 45px;
+                        font-weight: bold;
+                        color: rgb(36, 35, 35);
+                    }
+                }
+
+                .b1grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 60px;
+
+                    .gcard {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        color: gray;
+
+                        img {
+                            border-radius: 50%;
+                            height: 70PX;
+                            width: 70pX;
+                        }
+
+                    }
+                }
+            }
+
+            .gbox2 {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 10px 32px;
+                gap: 17px;
+
+                img {
+                    border-radius: 10px;
+                    height: 200px;
+                    transition: 0.3s ease;
+                }
+
+                :is(.grdidimg1, .grdidimg2, .grdidimg3, .grdidimg4, .grdidimg5, .grdidimg6, .grdidimg7, .grdidimg8, .grdidimg9, .grdidimg10, .grdidimg11, .grdidimg12):hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+
+
+
+            }
+
+        }
+
+        .pricing {
+            width: calc(80%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+
+            .pricingg {
+                color: rgb(255, 166, 0);
+            }
+
+            .priceslg {
+                font-size: 50px;
+                font-weight: bold;
+                color: rgb(27, 27, 27);
+            }
+
+        }
+
+        .mprscds {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            .prccards {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+
+                .prscard1,
+                .prscard2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 23px;
+                    border: 1px solid rgba(255, 166, 0, 0.515);
+                    color: gray;
+                    border-radius: 15px;
+                    padding: 35px;
+
+                    .pcardh {
+                        width: calc(100%);
+                        color: orange;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .prc {
+                        width: calc(100%);
+                        text-align: center;
+                        font-size: 25px;
+                        font-weight: 600;
+                        color: rgb(20, 20, 20);
+
+                        sub {
+                            color: rgb(20, 20, 20);
+                            font-weight: 600;
+                        }
+
+                    }
+
+                    .sew1 {
+                        margin: 20px;
+                        width: 200px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: white;
+                        text-align: center;
+                        padding: 6px 16px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        background-color: rgb(255, 132, 0);
+                        border-radius: 6px;
+
+                    }
+
+                    .sew1:hover {
+
+                        background-color: rgb(68, 106, 241);
+
+                    }
+
+
+                }
+
+                .prscard2 {
+                    background-color: rgb(255, 246, 235);
+                    color: rgb(107, 106, 106);
+                }
+
+                .prcof::before {
+                    content: "✓  ";
+                    color: orange;
+                    font-size: 30px;
+                }
+
+                .prcof1::before {
+                    content: "✕ ";
+                    color: orange;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .logs4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 40px;
+            padding: 30PX 120PX;
+
+            .lg1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 30px;
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+
+                .lgh {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .gradimg {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: calc(80%);
+            border-radius: 30px;
+            overflow: hidden;
+
+            .clr {
+                background:
+                    linear-gradient(to bottom, rgba(185, 117, 15, 0.46), rgba(255, 100, 11, 0.236)),
+                    url("https://omnifood.dev/img/eating.jpg");
+                background-size: cover;
+                height: 500px;
+                width: 800px;
+
+            }
+
+            .b1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                height: 500px;
+                gap: 50px;
+                background-color: rgb(216, 128, 33);
+                padding: 70px;
+
+                .bh {
+                    font-size: 43px;
+                    font-weight: bold;
+                    color: rgb(87, 48, 24);
+                }
+
+
+                .frm {
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 30px;
+
+                }
+
+                .frm1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    font-size: 15px;
+                    gap: 10px;
+
+                    input,
+                    select {
+                        font-size: 18px;
+                        height: 50px;
+                        width: 320px;
+                        outline: none;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 5px 10px;
+                    }
+
+                    .sub {
+                        background-color: rgb(69, 26, 26);
+                        font-size: 20px;
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                    .sub:hover {
+                        background-color: white;
+                        color: rgb(49, 48, 48);
+                    }
+                }
+            }
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 30px;
+            padding: 80px 40px;
+
+            .b1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                color: gray;
+                width: calc(90%);
+
+                img {
+                    height: 20px;
+                    width: 140px;
+                }
+
+                #icc {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 20px;
+                }
+
+                .fh {
+                    font-size: 24px;
+                    color: rgb(89, 89, 89);
+                    font-weight: bold;
+                }
+
+            }
+
+        }
+
+    }
+}
+    
+}
+</style>
+
+<body>
+    <div class="omnifood">
+
+
+        <div class="header">
+            <div class="navbar">
+                <img class="homeimg" src="https://omnifood.dev/img/omnifood-logo.png" alt="">
+                <div class="navside">
+                    <div class="n1">How it works</div>
+                    <div class="n1"> Meals</div>
+                    <div class="n1">Testimonials</div>
+                    <div class="n1">Pricing</div>
+                    <div class="n2">Try for free</div>
+                </div>
+            </div>
+            <div class="headerdis">
+                <div class="b1">
+
+                    <div class="head">A healthy meal delivered to your door, every single day</div>
+                    <div class="disc">The smart 365-days-per-year food subscription that will make you eat healthy
+                        again. Tailored to your personal tastes and nutritional needs.
+                    </div>
+
+                    <div class="clickb">
+                        <div class="sew">Start eating well</div>
+                        <div class="lm">Learn more ↓</div>
+                    </div>
+
+                    <div class="btm">
+                        <div class="slg">
+                            <img class="cir1" src="https://omnifood.dev/img/customers/customer-1.jpg" alt="">
+                            <img class="cir2" src="https://omnifood.dev/img/customers/customer-2.jpg" alt="">
+                            <img class="cir3" src="https://omnifood.dev/img/customers/customer-3.jpg" alt="">
+                            <img class="cir4" src="https://omnifood.dev/img/customers/customer-4.jpg" alt="">
+                            <img class="cir5" src="https://omnifood.dev/img/customers/customer-5.jpg" alt="">
+                            <img class="cir6" src="https://omnifood.dev/img/customers/customer-6.jpg" alt="">
+                            <div class="med">meals delivered last year!</div>
+                        </div>
+                    </div>
+
+                </div>
+                <img class="img3" src="https://omnifood.dev/img/hero.webp" alt="">
+            
+
+            </div>
+
+        </div>
+        <div class="asfeature">
+            <div class="asf">AS FEATURED IN</div>
+            <div class="img5">
+                <img src="https://omnifood-thankgod.netlify.app/img/logos/techcrunch.png" alt="" class="asfimg">
+                <img src="https://omnifood-thankgod.netlify.app/img/logos/business-insider.png" alt="" class="asfimg">
+                <img src="https://omnifood-thankgod.netlify.app/img/logos/the-new-york-times.png" alt="" class="asfimg">
+                <img src="https://omnifood-thankgod.netlify.app/img/logos/forbes.png" alt="" class="asfimg">
+                <img src="https://omnifood-thankgod.netlify.app/img/logos/usa-today.png" alt="" class="asfimg">
+            </div>
+        </div>
+        <div class="howit">
+            <div class="work">HOW IT WORK</div>
+            <div class="wdis">Your daily dose of health in 3 simple steps</div>
+        </div>
+        <div class="mainsimple">
+            <div class="simple1">
+                <div class="box">
+                    <div class="s1">01</div>
+                    <div class="shead">Tell us what you like (and what not)</div>
+                    <div class="sdis">Never again waste time thinking about what to eat! Omnifood AI will create a 100%
+                        personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins
+                        you need, no matter what diet you follow!</div>
+                </div>
+                <div class="sim11"></div>
+                <img src="https://omnifood.dev/img/app/app-screen-1.png" alt="" class="sim1">
+            </div>
+            <div class="simple1">
+                <div class="sim12"></div>
+                <img src="https://omnifood.dev/img/app/app-screen-2.png" alt="" class="sim2">
+                <div class="box2">
+                    <div class="s1">02</div>
+                    <div class="shead">Approve your weekly meal plan</div>
+                    <div class="sdis">Once per week, approve the meal plan generated for you by Omnifood AI. You can
+                        change ingredients, swap entire meals, or even add your own recipes.</div>
+                </div>
+            </div>
+            <div class="simple14">
+                <div class="box">
+                    <div class="s1">03</div>
+                    <div class="shead">Receive meals at convenient time</div>
+                    <div class="sdis">Best chefs in town will cook your selected meal every day, and we will deliver it
+                        to your door whenever works best for you. You can change delivery schedule and address daily!
+                    </div>
+                </div>
+                <div class="sim13"></div>
+                <img src="https://omnifood.dev/img/app/app-screen-3.png" alt="" class="sim3">
+            </div>
+
+        </div>
+        <div class="meals">
+            <div class="mealshead">MEALS</div>
+            <div class="mealsdis">Omnifood AI chooses from 5,000+ recipes</div>
+        </div>
+        <div class="maincards">
+            <div class="cardss">
+                <div class="card">
+                    <img class="vv" src="https://omnifood-thankgod.netlify.app/img/meals/meal-1.jpg" alt="">
+                    <div class="carddtls">
+                        <div class="cardh">
+                            <div class="foodty">VEGETARAN</div>
+                            <div class="foodsty">Japanese Gyozas</div>
+                            <div class="foodcal">650 Calories</div>
+                            <div class="foodcal">NutriScore @ 74</div>
+                            <div class="foodcal">4.9 Rating (375 reviews)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://omnifood-thankgod.netlify.app/img/meals/meal-2.jpg" alt="" class="vv">
+                    <div class="carddtls">
+                        <div class="cardh">
+                            <div class="foodty">VEGETARAN</div>
+                            <div class="foodsty">Avaocado Salad</div>
+                            <div class="foodcal">400 Calories</div>
+                            <div class="foodcal">NutriScore @ 75</div>
+                            <div class="foodcal">4.8 Rating (136 reviews)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diets">
+                    <div class="cla">Works with any diet</div>
+                    <div class="diet">Vegetarian</div>
+                    <div class="diet">vegan</div>
+                    <div class="diet">Pescararian</div>
+                    <div class="diet">Gluten-free</div>
+                    <div class="diet">Lactose-free</div>
+                    <div class="diet">Keto</div>
+                    <div class="diet">Paleo</div>
+                    <div class="diet">Low FODMAP</div>
+                    <div class="diet">Kid-friendly</div>
+                </div>
+            </div>
+            <div class="seeall">See all recipes →</div>
+        </div>
+
+        <div class="maingrid">
+            <div class="gbox1">
+                <div class="ghead">
+                    <div class="gh1">TESTIMONIAL</div>
+                    <div class="gh2">Once you try it, you can't go back</div>
+                </div>
+                <div class="b1grid">
+                    <div class="gcard">
+                        <img src="https://omnifood-thankgod.netlify.app/img/customers/dave.jpg" alt="">
+                        <div class="cmt">Inexpensive, healthy and great-tasting meals, without even having to order
+                            manually! It feels truly magical.</div>
+                        <div class="cmtn">— Dave Bryson</div>
+                    </div>
+                    <div class="gcard">
+                        <img src="https://omnifood-thankgod.netlify.app/img/customers/ben.jpg" alt="">
+                        <div class="cmt">The AI algorithm is crazy good, it chooses the right meals for me every time.
+                            It's amazing not to worry about food anymore!</div>
+                        <div class="cmtn">— Ben Hadley</div>
+                    </div>
+                    <div class="gcard">
+                        <img src="https://omnifood-thankgod.netlify.app/img/customers/steve.jpg" alt="">
+                        <div class="cmt">Omnifood is a life saver! I just started a company, so there's no time for
+                            cooking. I couldn't live without my daily meals now! (Steve Miller)</div>
+                        <div class="cmtn">— Steve Miller
+
+                        </div>
+                    </div>
+                    <div class="gcard">
+                        <img src="https://omnifood-thankgod.netlify.app/img/customers/hannah.jpg" alt="">
+                        <div class="cmt">I got Omnifood for the whole family, and it frees up so much time! Plus,
+                            everything is organic and vegan and without plastic. (Hannah Smith)</div>
+                        <div class="cmtn">— Hannah Smith</div>
+                    </div>
+                </div>
+            </div>
+            <div class="gbox2">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-1.jpg" alt="" class="grdidimg1">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-2.jpg" alt="" class="grdidimg2">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-3.jpg" alt="" class="grdidimg3">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-4.jpg" alt="" class="grdidimg4">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-5.jpg" alt="" class="grdidimg5">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-6.jpg" alt="" class="grdidimg6">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-7.jpg" alt="" class="grdidimg7">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-8.jpg" alt="" class="grdidimg8">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-9.jpg" alt="" class="grdidimg9">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-10.jpg" alt="" class="grdidimg10">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-11.jpg" alt="" class="grdidimg11">
+                <img src="https://omnifood-thankgod.netlify.app/img/gallery/gallery-12.jpg" alt="" class="grdidimg12">
+            </div>
+        </div>
+
+        <div class="pricing">
+            <div class="pricingg">PRICING</div>
+            <SIV class="priceslg">Eating well without breaking the bank</SIV>
+        </div>
+        <div class="mprscds">
+            <div class="prccards">
+                <div class="prscard1">
+
+                    <div class="pcardh">STARTER</div>
+                    <DIV class="prc"><sub>$ </sub>399</DIV>
+                    <div class="prcof">per month. That's just $13 per meal!</div>
+                    <div class="prcof">1 meal per Day</div>
+                    <div class="prcof">Order from 11am to 9pm</div>
+                    <div class="prcof">Delivery is free</div>
+                    <div class="prcof1" style="color: orange;">✕</div>
+                    <div class="sew1">Start eating well</div>
+                </div>
+                <div class="prscard2">
+
+                    <div class="pcardh">COMPLETE</div>
+                    <DIV class="prc"><sub>$ </sub>649</DIV>
+                    <div class="prcof">per month. That's just $11 per meal!</div>
+                    <div class="prcof">2 meals per Day</div>
+                    <div class="prcof">Order 24/7</div>
+                    <div class="prcof">Delivery is free</div>
+                    <div class="prcof">get access to latest recipes</div>
+                    <div class="sew1">Start eating well</div>
+                </div>
+
+            </div>
+            <div class="prccdis">Prices include all applicable taxes. You can cancel at any time. Both plans include the
+                following:</div>
+        </div>
+
+        <div class="logs4">
+
+            <div class="lg1">
+                <img src="https://raw.githubusercontent.com/Vamsi-Kathi/omnifood/8a596f2a30140cf38e8ac8f2490b1518442d4e43/images/lg1.jpg" alt="" class="lgh">
+                <div class="lgh">Never cook again!</div>
+                <div class="lg">Our subscriptions cover 365 days per year, even including major holidays.</div>
+            </div>
+            <div class="lg1">
+                <img src="https://raw.githubusercontent.com/Vamsi-Kathi/omnifood/8a596f2a30140cf38e8ac8f2490b1518442d4e43/images/lg2.jpg" alt="">
+                <div class="lgh">Local and organic</div>
+                <div class="lg">Our cooks only use local, fresh, and organic products to prepare your meals.</div>
+            </div>
+            <div class="lg1">
+                <img src="https://raw.githubusercontent.com/Vamsi-Kathi/omnifood/8a596f2a30140cf38e8ac8f2490b1518442d4e43/images/lg3.jpg" alt="">
+                <div class="lgh">No waste</div>
+                <div class="lg">All our partners only use reusable containers to package all your meals.</div>
+            </div>
+            <div class="lg1">
+                <img src="https://raw.githubusercontent.com/Vamsi-Kathi/omnifood/8a596f2a30140cf38e8ac8f2490b1518442d4e43/images/lg4.jpg" alt="">
+                <div class="lgh">Pause anytime</div>
+                <div class="lg">Going on vacation? Just pause your subscription, and we refund unused days.</div>
+            </div>
+        </div>
+        <div class="gradimg">
+            <div class="b1">
+                
+                <div class="bh">Get your first meal for free!</div>
+                <div class="bdis">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You
+                    can cancel or pause anytime. And the first meal is on us!</div>
+                <form action="">
+                    <div class="frm">
+                        <div class="frm1"><span for="fname">Full Name</span>
+                            <input type="text" placeholder="Jakkula venu gopal">
+                        </div>
+                        <div class="frm1"> <span for="email">email</span>
+                            <input type="email" placeholder="venugopal@gmail.com">
+                        </div>
+                        <div class="frm1"> <span for="wh">Where did you hear from us?</span>
+                            <select name="" id="">
+                                <option value="">choose one</option>
+                                <option value="">facebook</option>
+                                <option value="">youtube</option>
+                                <option value="">podcast</option>
+                            </select>
+                        </div>
+                        <div class="frm1">
+                            <input class="sub" type="submit" value="sign up now">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="clr">
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div class="b1">
+                <img class="fimg" src="https://omnifood.dev/img/omnifood-logo.png" alt="">
+                <div id="icc">
+                    <i id="icon" class="fa-brands fa-facebook fa-2x"></i>
+                    <i id="icon" class="fa-brands fa-twitter fa-2x"></i>
+                    <i id="icon" class="fa-brands fa-youtube fa-2x"></i>
+                </div>
+                <div class="fd"></div>
+                <div class="fd">Copyright © 2024 by Omnifood, Inc. All rights reserved.</div>
+            </div>
+            <div class="b1">
+                <div class="fh">Contact us</div>
+                <div class="fd1">623 Harrison St., 2nd Floor, San Francisco, CA 94107</div>
+                <div class="fd1">415-201-6370</div>
+                <div class="fd1">hello@omnifood.com</div>
+            </div>
+            <div class="b1">
+                <div class="fh">Account</div>
+                <div class="fd1">Create account</div>
+                <div class="fd1">Sign in</div>
+                <div class="fd1">iOS app</div>
+                <div class="fd1">Android app</div>
+            </div>
+            <div class="b1">
+                <div class="fh">Company</div>
+                <div class="fd1">About Omnifood</div>
+                <div class="fd1">For Business</div>
+                <div class="fd1">Cooking partners</div>
+                <div class="fd1">Careers</div>
+            </div>
+            <div class="b1">
+                <div class="fh">Resources</div>
+                <div class="fd1">Recipe directory</div>
+                <div class="fd1">Help center</div>
+                <div class="fd1">Privacy & terms</div>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
